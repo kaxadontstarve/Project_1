@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import cl from "./Footer.module.css";
+import cl from "./Footer.module.css"; // лучше сразу именовать конкретно например footerSty или ftrSty
 import FooterColumn from './FooterColumn';
 import logo from "./imgs/Frame 24 3.png";
 import telegram from "./imgs/Vector (1).svg";
@@ -11,6 +11,7 @@ import vk from "./imgs/Vector (4).svg";
 const Footer = () => {
     return (
         <div className={cl.footer}>
+          {/* лишняя вложенность, можно перенести стили в блок выше */}
             <div className={cl.footer__body}>
                 <FooterColumn title='Заказчику' items={['Добавить заказ', 'Мастера и бригады', 'Как это работает?']} />
                 <FooterColumn title='Исполнителю' items={[' Начать работу', 'Заказы', 'Условия и цены']} />
