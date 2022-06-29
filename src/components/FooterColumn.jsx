@@ -1,5 +1,5 @@
 import React from 'react'
-import cl from "./Footer.module.css";
+import cl from "./Footer.sty.css";
 
 
 const FooterColumn = ({ title, items }) => {

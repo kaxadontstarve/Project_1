@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import cl from "./Footer.module.css";
+import React from 'react'
+import cl from "./Footer.sty.css";
 import FooterColumn from './FooterColumn';
 import logo from "./imgs/Frame 24 3.png";
 import telegram from "./imgs/Vector (1).svg";
@@ -11,7 +11,7 @@ import vk from "./imgs/Vector (4).svg";
 const Footer = () => {
     return (
         <div className={cl.footer}>
-            <div className={cl.footer__body}>
+
                 <FooterColumn title='Заказчику' items={['Добавить заказ', 'Мастера и бригады', 'Как это работает?']} />
                 <FooterColumn title='Исполнителю' items={[' Начать работу', 'Заказы', 'Условия и цены']} />
                 <FooterColumn title='Компания' items={[' О проекте', 'Поддержка', 'Сообщество']} />
@@ -40,7 +40,6 @@ const Footer = () => {
                     <a href='#'><img src={telegram} /></a>
                 </div>
             </div >
-        </div >
 
 
     )
